@@ -186,6 +186,72 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://e8035669.github.io/2019/11/09/homework-marker/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Yu-Ren, Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jeff Zhang's home">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/09/homework-marker/" class="post-title-link" itemprop="url">Homework-marker 自製改作業方便下評語的小工具</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2019-11-09 08:28:27 / 修改時間：10:34:13" itemprop="dateCreated datePublished" datetime="2019-11-09T08:28:27+08:00">2019-11-09</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          允許使用者在手機端打好一系列評語後，改用☑️勾選的方式，將評語傳送至電腦的剪貼簿上。
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/11/09/homework-marker/">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="https://e8035669.github.io/2019/11/07/hexo-notes/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -209,10 +275,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
-              
 
-              <time title="創建時間：2019-11-07 22:50:03 / 修改時間：23:26:51" itemprop="dateCreated datePublished" datetime="2019-11-07T22:50:03+08:00">2019-11-07</time>
+              <time title="創建時間：2019-11-07 22:50:03" itemprop="dateCreated datePublished" datetime="2019-11-07T22:50:03+08:00">2019-11-07</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2019-11-09 10:11:56" itemprop="dateModified" datetime="2019-11-09T10:11:56+08:00">2019-11-09</time>
+              </span>
 
           
 
@@ -225,26 +297,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>太久沒有使用，把指令都給忘光了，還得回去看英文的文件才能重新開始寫文章。不如花點時間記一下會用到的指令，下次就不用看原文了</p>
-<h2 id="npm-相關"><a href="#npm-相關" class="headerlink" title="npm 相關"></a>npm 相關</h2><h3 id="更新所有套件"><a href="#更新所有套件" class="headerlink" title="更新所有套件"></a>更新所有套件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm update -g</span><br></pre></td></tr></table></figure>
-<p><code>-g</code>應該是更新電腦裡所有npm安裝的套件，否則就只會更新目前專案指定的套件（的樣子）</p>
-<h2 id="主題相關"><a href="#主題相關" class="headerlink" title="主題相關"></a>主題相關</h2><h3 id="更新Next的主題"><a href="#更新Next的主題" class="headerlink" title="更新Next的主題"></a>更新Next的主題</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ git pull</span><br></pre></td></tr></table></figure>
-<p>如果有git的話就pull一下，沒有的話要手動來了</p>
-<h3 id="匯出個人改過的東西"><a href="#匯出個人改過的東西" class="headerlink" title="匯出個人改過的東西"></a>匯出個人改過的東西</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git diff _config.yml &gt; ../_config.yml.patch</span><br></pre></td></tr></table></figure>
-<p>不想commit或是stash這個內層的專案，不然就很難pull了。<br>匯出改過的東西之後，下次要更新前就可以放心把_config.yml恢復預設了</p>
-<h3 id="匯入個人改過的設定"><a href="#匯入個人改過的設定" class="headerlink" title="匯入個人改過的設定"></a>匯入個人改過的設定</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git apply --reject ../_config.yml.patch</span><br></pre></td></tr></table></figure>
-<p>若有失敗，就會停止，接著就得手動自己更新了</p>
-<h2 id="Hexo-相關"><a href="#Hexo-相關" class="headerlink" title="Hexo 相關"></a>Hexo 相關</h2><h3 id="新增一篇新文章"><a href="#新增一篇新文章" class="headerlink" title="新增一篇新文章"></a>新增一篇新文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"標題"</span></span><br></pre></td></tr></table></figure>
-<p>預設將會新建一個post，在專案中</p>
-<h3 id="跑本地端的Server起來預覽"><a href="#跑本地端的Server起來預覽" class="headerlink" title="跑本地端的Server起來預覽"></a>跑本地端的Server起來預覽</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>執行後會跳出連結讓你點選，就能看到自己的網頁</p>
-<h3 id="產生網頁"><a href="#產生網頁" class="headerlink" title="產生網頁"></a>產生網頁</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>會產生網頁放在<code>Public</code>的資料夾中</p>
-<h3 id="發佈網頁"><a href="#發佈網頁" class="headerlink" title="發佈網頁"></a>發佈網頁</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>把產生的網頁發布到git上</p>
-<h3 id="清掉本地端生成的快取"><a href="#清掉本地端生成的快取" class="headerlink" title="清掉本地端生成的快取"></a>清掉本地端生成的快取</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
-<p>會清掉全部自動生成的檔案，包括網頁之類的。</p>
-
+          太久沒有使用，把指令都給忘光了，還得回去看英文的文件才能重新開始寫文章。不如花點時間記一下會用到的指令，下次就不用看原文了
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/11/07/hexo-notes/">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -504,14 +565,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
